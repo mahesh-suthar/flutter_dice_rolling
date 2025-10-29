@@ -1,41 +1,111 @@
-# Miscellaneous
-*.class
-*.log
-*.pyc
-*.swp
-.DS_Store
-.atom/
-.buildlog/
-.history
-.svn/
-
-# IntelliJ related
-*.iml
-*.ipr
-*.iws
-.idea/
-
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
-
-# Flutter/Dart/Pub related
-**/doc/api/
-**/ios/Flutter/.last_build_id
+# =========================================
+# FLUTTER / DART
+# =========================================
 .dart_tool/
 .flutter-plugins
 .flutter-plugins-dependencies
 .packages
 .pub-cache/
 .pub/
-/build/
-
-# Web related
+build/
+coverage/
 lib/generated_plugin_registrant.dart
 
-# Symbolication related
-app.*.symbols
+# =========================================
+# PLATFORM-SPECIFIC BUILD ARTIFACTS
+# =========================================
 
-# Obfuscation related
-app.*.map.json
+# Android
+**/android/.gradle/
+**/android/local.properties
+**/android/app/debug
+**/android/app/profile
+**/android/app/release
+*.keystore
+*.jks
+key.properties
+
+# iOS
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/App.framework
+ios/Flutter/Flutter.framework
+ios/Flutter/Generated.xcconfig
+ios/Flutter/ephemeral/
+ios/ServiceDefinitions.json
+ios/Runner/GeneratedPluginRegistrant.*
+**/ios/Flutter/.last_build_id
+
+# macOS
+macos/Pods/
+macos/.symlinks/
+macos/Flutter/ephemeral/
+macos/Runner/GeneratedPluginRegistrant.*
+
+# Windows
+windows/flutter/ephemeral/
+windows/Runner/GeneratedPluginRegistrant.*
+
+# Linux
+linux/flutter/ephemeral/
+linux/Runner/GeneratedPluginRegistrant.*
+
+# Web
+web/.dart_tool/
+web/build/
+# Uncomment below if using Tailwind or build tools that generate output
+# web/dist/
+# web/node_modules/
+
+# =========================================
+# ENVIRONMENT / SECRETS
+# =========================================
+.env
+.env.*
+google-services.json
+GoogleService-Info.plist
+firebase_app_id_file.json
+*.pem
+*.p12
+*.cer
+
+# =========================================
+# IDE / EDITOR
+# =========================================
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+
+# =========================================
+# SYSTEM / OS FILES
+# =========================================
+.DS_Store
+Thumbs.db
+*.swp
+*.lock
+*.log
+*.tmp
+*.bak
+*.orig
+*.pid
+*.seed
+.history
+.svn/
+.buildlog/
+.atom/
+.cache/
+tmp/
+temp/
+
+# =========================================
+# FASTLANE / CI / AUTOMATION
+# =========================================
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/
+fastlane/test_output/
